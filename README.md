@@ -1,4 +1,4 @@
-#Reading Book
+# Reading Book
 
 ```
 $ rails new ReadingBook
@@ -7,24 +7,31 @@ $ rails new ReadingBook
 
 ### 2.2 User Resource
 
-####Tạo mô hình MVC đơn giản sử dụng `scaffold` :
+#### Tạo mô hình MVC đơn giản sử dụng `scaffold` :
 ```
 $ rails generate scaffold User name:string email:string
 ```
 
-#####Migrate bảng vào db
+##### Migrate bảng vào db
 ```
 $ rails db:migrate
 ```
 
-#####Duyệt các routes
+##### Duyệt các routes
 ```
 $ rails routes
 ```
 
-#####Start Rails Server
+##### Start Rails Server
 ```
 $ rails s
 ```
 
 [Create new user](http://localhost:3000/users/new)
+
+### 2.3.1 A micropost microtour
+
+```
+$ rails generate scaffold Micropost content:text user_id:integer
+$ rails db:migrate
+```
