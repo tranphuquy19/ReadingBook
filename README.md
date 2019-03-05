@@ -35,3 +35,5 @@ $ rails s
 $ rails generate scaffold Micropost content:text user_id:integer
 $ rails db:migrate
 ```
+
+### 3.1 Sample app setup

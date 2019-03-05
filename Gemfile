@@ -9,7 +9,8 @@ gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'# This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
+gem 'puma', '~> 3.11'
+# This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
