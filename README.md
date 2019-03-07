@@ -92,3 +92,15 @@ Khi mình gọi `<%= render "layouts/navdropdown"  %>` Rails sẽ hiểu đó l�
 #### 5.4.1 Users controller
 
 `rails generate controller Users new`
+
+### Modeling users
+
+#### 6.1 User model - 6.2.5
+
+```
+$ rails generate controller Users new
+$ rails db:migrate
+```
+
+Sử dụng tag --sandbox trong console để  hoàn nguyên mọi thay đổi trong db khi giao tiếp với db thông qua `rails console`
+`rails console --sandbox`
