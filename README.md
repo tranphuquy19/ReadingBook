@@ -64,3 +64,6 @@ Trong đó:
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %> #link stylesheet .css
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> #link javascript .js
 ```
+
+#### 3.4.4 Setting the root route
+
