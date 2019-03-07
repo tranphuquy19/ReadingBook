@@ -37,3 +37,15 @@ $ rails db:migrate
 ```
 
 ### 3.1 Sample app setup
+
+#### 3.2.1 Generated static pages
+
+Tạo controllers StaticPages, home, help
+
+```
+$ rails generate controller StaticPages home help
+```
+
+Controller sẽ tạo ra các view tương ứng với từng controller (html.erb), và không cần render view như các FW khác như Laravel ...
+
+[Go to Home Page](http://localhost:3000/static_pages/home) [Go to Help Page](http://localhost:3000/static_pages/help)
