@@ -35,8 +35,9 @@ $ rails s
 $ rails generate scaffold Micropost content:text user_id:integer
 $ rails db:migrate
 ```
+### 3 Mostly static pages
 
-### 3.1 Sample app setup
+#### 3.1 Sample app setup
 
 #### 3.2.1 Generated static pages
 
@@ -66,4 +67,10 @@ Trong đó:
 ```
 
 #### 3.4.4 Setting the root route
+
+### 4 Rails-flavored Ruby
+
+#### 4.1.2 Custom helpers
+
+Một điều tôi thích ở FW Laravel đó là Helper, chúng ta có thể định nghĩa các biến, các hằng, các function (request db, modify giá trị or check Authentication) ở toàn bộ Project hay 1 vùng nào đó. Giúp tránh code đi code lại 1 đoạn code nhàm chán nhưng lại xuất hiện ở mọi nơi. Và tuyệt vời rằng là Rails có hỗ trợ chúng yahoooo! ;)
 
