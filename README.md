@@ -74,4 +74,4 @@ Trong đó:
 
 Một điều tôi thích ở FW Laravel đó là Helper, chúng ta có thể định nghĩa các biến, các hằng, các function (request db, modify giá trị or check Authentication) ở toàn bộ Project hay 1 vùng nào đó. Giúp tránh code đi code lại 1 đoạn code nhàm chán nhưng lại xuất hiện ở mọi nơi. Và tuyệt vời rằng là Rails có hỗ trợ chúng yahoooo! ;)
 
-Xem custom helper [tại đây](https://github.com/tranphuquy19/ReadingBook/commit/2d6dfe675827e8f768ddd61f60d902962b38d1c2) (-commit 2d6dfe6)
+Xem custom helper [tại đây](https://github.com/tranphuquy19/ReadingBook/commit/2d6dfe675827e8f768ddd61f60d902962b38d1c2) (-commit 2d6dfe6) 
