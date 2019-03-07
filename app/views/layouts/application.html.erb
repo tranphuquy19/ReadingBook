@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+   <head>
+      <meta charset="utf-8">
+      <title><%= full_title(yield(:title)) %></title>
+      <%= csrf_meta_tags %>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   </head>
+   <body>
+      
+      <nav class="navbar navbar-expand-sm navbar-dark bg-primary rounded fixed-top">
+         <a class="navbar-brand" href="#">Rails Tutorial</a>
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+               <a class="nav-link">Ruby</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link">Gem</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Routes
+               </a>
+               <div class="dropdown-menu">
+                  <a class="dropdown-item" href="/static_pages/help">help</a>
+                  <a class="dropdown-item" href="/static_pages/about">about</a>
+                  <a class="dropdown-item" href="/static_pages/contact">contact</a>
+               </div>
+            </li>
+         </ul>
+         <!-- Navbar-nav with FORM -->
+         <ul class="navbar-nav ml-auto">
+            <form class="form-inline" action="/">
+               <input class="form-control mr-sm-2" type="text" placeholder="Search">
+               <button class="btn btn-success" type="submit">Search</button>
+            </form>
+         </ul>
+      </nav>
+      <div class="container">
+        <%= yield %>
+      </div>
 
-  <body>
-    <%= yield %>
-  </body>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   </body>
 </html>

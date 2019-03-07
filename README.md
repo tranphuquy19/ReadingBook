@@ -78,7 +78,7 @@ Xem custom helper [tại đây](https://github.com/tranphuquy19/ReadingBook/comm
 
 ### Filling in the layout
 
-#### 5.1.1-2
+#### 5.1.1-5.1.2
 
 Trong phần này tác giả đề cập đến Bootstrap, SASS/SCSS, Font-Awesome. Mình sẽ custom theo cách riêng của mình và sử dụng Boostrap thuần để đơn giản hóa vấn đề và tập trung vào FW. Mình có số từ khóa bạn cần tham khảo cũng như tăng exp của mình như `gulp`, `parcel`, `react`, `vue`, ...
 Hoặc bạn có thể đơn giản hóa vấn đề hơn nữa, bạn có thể sử dụng các template có sẵn free trên internet, hỗ trợ đến 99% mà bạn cần giải quyết ở front-end và tập trung vào back-end. Và... cả 2 nếu bạn có thiên hướng Full-stack
