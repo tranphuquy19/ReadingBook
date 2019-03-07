@@ -88,3 +88,7 @@ Hoặc bạn có thể đơn giản hóa vấn đề hơn nữa, bạn có thể
 Ngoài Refactor, Rails còn hỗ trợ chúng ta thêm tính năng nữa đó là Partials nhằm chia nhỏ code ra, để dễ kiểm soát, tái sử dụng và tránh nhọc nhằm về code hay mình gọi vui đó là đa kế thừa của html :v
 
 Khi mình gọi `<%= render "layouts/navdropdown"  %>` Rails sẽ hiểu đó là file `_navdropdown.html.erb` nằm trong thư mục `layouts`. Dấu `_` là cách Rails phân biệt 1 Partials với các Views thông thường.
+
+#### 5.4.1 Users controller
+
+`rails generate controller Users new`
