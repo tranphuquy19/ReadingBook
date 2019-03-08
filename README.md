@@ -104,3 +104,10 @@ $ rails db:migrate
 
 Sử dụng tag --sandbox trong console để  hoàn nguyên mọi thay đổi trong db khi giao tiếp với db thông qua `rails console`
 `rails console --sandbox`
+
+Tạo Migrate `add_index` và migrate:
+
+```
+$   rails generate migration add_index_to_users_email
+$   rails db:migrate
+```
