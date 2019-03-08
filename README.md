@@ -123,3 +123,5 @@ Chạy lệnh `$ bundle install` để cài đặt Gems
 #### 6.3.2 User has secure password
 
 #### 6.3.3 Minimum password standards
+
+#### 6.3.4 Creating and authenticating a user
