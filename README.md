@@ -143,3 +143,5 @@ gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
 #### 7.2.2 Signup form HTML
 
 #### 7.3.1 A working form
+
+#### 7.3.2 Strong parameters
