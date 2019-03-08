@@ -125,3 +125,17 @@ Chạy lệnh `$ bundle install` để cài đặt Gems
 #### 6.3.3 Minimum password standards
 
 #### 6.3.4 Creating and authenticating a user
+
+### 7. Sign up
+
+#### 7.1.2 A Users resource
+
+Bằng cách khai báo `resources :users` ta đã tạo 1 routes theo chuẩn REST bao gồm cả CRUD(Create, Read, Update, Delete)-tương ứng theo các phương thức POST, GET, PATCH, DELETE
+
+#### 7.1.4 A Gravatar image and a sidebar
+
+Mỗi email chỉ được 1 user duy nhất nên chúng ta sử dụng chuỗi hash từ email này để đặt tên cho file image avatar. Mục đích của việc này ẩn đi filename thật khi user upload avatar của mình lên website. Thứ 2 là tránh các công cụ Crawler craw data website làm ngốn băng thông, quá tải hệ thống, nghiêm trọng hơn là có thể lộ thông tin cá nhân người dùng nếu set filename đơn giản như (00001.jpg, 00002.jpg, ...)
+
+```ruby
+gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
+```
