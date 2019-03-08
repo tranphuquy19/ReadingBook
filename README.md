@@ -119,3 +119,5 @@ Chúng ta sẽ bảo mật thông tin người dùng bằng cách băm mật kh�
 Chúng ta khai báo gem `bcrypt` trong gemfile bằng cách thêm dòng sau 
 `gem 'bcrypt', '~> 3.1', '>= 3.1.12'`
 Chạy lệnh `$ bundle install` để cài đặt Gems
+
+#### 6.3.2 User has secure password
