@@ -139,3 +139,5 @@ Mỗi email chỉ được 1 user duy nhất nên chúng ta sử dụng chuỗi 
 ```ruby
 gravatar_id = Digest::MD5::hexdigest(user.email.downcase)
 ```
+
+#### 7.2.2 Signup form HTML
