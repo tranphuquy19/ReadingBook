@@ -121,3 +121,5 @@ Chúng ta khai báo gem `bcrypt` trong gemfile bằng cách thêm dòng sau
 Chạy lệnh `$ bundle install` để cài đặt Gems
 
 #### 6.3.2 User has secure password
+
+#### 6.3.3 Minimum password standards
