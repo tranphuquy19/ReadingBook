@@ -111,3 +111,11 @@ Tạo Migrate `add_index` và migrate:
 $   rails generate migration add_index_to_users_email
 $   rails db:migrate
 ```
+### 6.3 Adding a secure password
+
+#### 6.3.1 A hashed password
+
+Chúng ta sẽ bảo mật thông tin người dùng bằng cách băm mật khẩu (hashed password), thuật toán mình dùng ở đây là BCrypt. Đây là thuật toán khá an toàn, cực kì phổ biến, được các trang lớn sử dụng. Nếu như hacker có thể chiếm quyền Website thậm chí là kiểm soát toàn bộ Database thì việc hacker có thể  khôi phục lại mật khẩu người dùng là cực kì khó, hoặc có thể nói là `mission impossible`
+Chúng ta khai báo gem `bcrypt` trong gemfile bằng cách thêm dòng sau 
+`gem 'bcrypt', '~> 3.1', '>= 3.1.12'`
+Chạy lệnh `$ bundle install` để cài đặt Gems
