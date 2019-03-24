@@ -1,5 +1,13 @@
 class ApplicationController < ActionController::Base
-    def hello
-        render html: "Xin chào đến với rails!"
+    protect_from_forgery with: :exception
+    include SessionsHelper
+  
+    private
+  
+    def logged_in_user
+      return if logged_in?
+      store_location
+      flash[:danger] = t "users.users_controller.pls_log_in"
+      redirect_to login_path
     end
-end
+  end
